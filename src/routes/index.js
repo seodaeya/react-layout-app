@@ -3,6 +3,7 @@ import DefaultLayout from "../layouts/DefaultLayout";
 import Home from "./Home";
 import Page2 from "./Page2";
 import Login from "./Login";
+import Axios from "./Axios";
 
 export const router = createBrowserRouter([
     {
@@ -24,6 +25,13 @@ export const router = createBrowserRouter([
         element: <DefaultLayout
             className={ 'Login' }
             children={ <Login /> }
+        />,
+    },
+    {
+        path: "/axios",
+        element: <DefaultLayout
+            className={ 'Axios' }
+            children={ <Axios /> }
         />,
     },
     // TODO others NotFoundPage
